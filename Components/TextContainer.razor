@@ -1,0 +1,37 @@
+﻿<div id="@Id"  class="textContainer" style="@BackgroundColor">
+    <div class="flexContainer">
+        <h2 style="font-size: 1.0rem">
+            @Title
+        </h2>
+    </div>
+    <div class="flexContainer">
+        <div style="height: 65px;">
+            <div style="border-left: 2px solid rgba(97, 97, 97, 1); height: 100%"></div>
+        </div>
+    </div>
+    @ChildContent
+</div>
+
+@code {
+    [Parameter]
+    public string Id { get; set; } = "default-text";
+
+    [Parameter]
+    public string Title { get; set; }
+
+    private string backgroundColor;
+    [Parameter]
+    public string BackgroundColor
+    {
+        get { return "background-color:" + backgroundColor; }
+        set { backgroundColor = value; }
+    }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+    }
+}

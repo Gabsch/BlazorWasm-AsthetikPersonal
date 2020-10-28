@@ -1,0 +1,26 @@
+﻿@using Gabsch.AsthetikPersonal.Models
+@inject HttpClient Http
+@page "/booking"
+
+<ImageContainer ImageHeight="ImageContainer.ImageVh.Medium" ImagePath="https://static.wixstatic.com/media/84770f_eacf1785dd2f490a9ead3c0732a90c3d.png/v1/fill/w_1903,h_520,al_t,q_90,usm_0.66_1.00_0.01/84770f_eacf1785dd2f490a9ead3c0732a90c3d.webp" />
+<TextContainer Title="Online Buchen" Id="text-booking" BackgroundColor="#F5F50A">
+    <div class="flexContainer">
+        <div style="width: 480px;">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+    </div>
+</TextContainer>
+@if (bookingItems != null)
+{
+    <BookingInfoList BookingItems="@bookingItems" />
+}
+<ImageContainer ImageHeight="ImageContainer.ImageVh.Small" ImagePath="https://static.wixstatic.com/media/84770f_bde37e8517a54f3d8e23d7320d0a8c52.jpg/v1/fill/w_1903,h_937,al_c,q_85,usm_0.66_1.00_0.01/84770f_bde37e8517a54f3d8e23d7320d0a8c52.webp" />
+
+@code {
+    private IList<BookingItem> bookingItems;
+
+    protected override async Task OnInitializedAsync()
+    {
+        bookingItems = await Http.GetFromJsonAsync<BookingItem[]>("sample-data/bookingItems.json");
+    }
+}

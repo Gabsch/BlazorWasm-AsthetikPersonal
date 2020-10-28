@@ -1,0 +1,95 @@
+﻿<div class="container-centered">
+    <div class="gridContainer">
+        <div class="gridRow1 tile1">
+            <Tile Title="FUNCTIONAL TRAINING" NavigateTo="@(basePath + "Functional-Training")">
+                <ul class="font">
+                    <li>
+                        <p class="font">Alltagsrelevantes & sportübergreifendes Training</p>
+                    </li>
+                    <li>
+                        <p class="font">Training mit dem eigenen Körpergewicht</p>
+                    </li>
+                    <li>
+                        <p class="font">Komplexe Bewegungsabläufe</p>
+                    </li>
+                </ul>
+            </Tile>
+        </div>
+        <div class="gridRow1 tile2">
+            <Tile Title="MUSKEL-AUFBAU" NavigateTo="@(basePath + "Muskelaufbau")">
+                <ul class="font">
+                    <li>
+                        <p class="font">Zielgerichtete Belastungen im Training</p>
+                    </li>
+                    <li>
+                        <p class="font">Aufbau & Definiton</p>
+                    </li>
+                    <li>
+                        <p class="font">Reduzierung des Körperfetts</p>
+                    </li>
+                </ul>
+            </Tile>
+        </div>
+        <div class="gridRow1 tile3">
+            <Tile Title="GEWICHTS-VERLUST" NavigateTo="@(basePath + "Gewichtsverlust")">
+                <ul class="font">
+                    <li>
+                        <p class="font">Gezielte Reduktion des Körpergewichts</p>
+                    </li>
+                    <li>
+                        <p class="font">Regulation des Stoffwechsels</p>
+                    </li>
+                    <li>
+                        <p class="font">Ernährung</p>
+                    </li>
+                </ul>
+            </Tile>
+        </div>
+        <div class="gridRow2 tile4">
+            <Tile Title="CARDIO / AUSDAUER-TRAINING" NavigateTo="@(basePath + "Cardio-Fitness")">
+                <ul class="font">
+                    <li>
+                        <p class="font">Ausdauernde Bewegungseinheit</p>
+                    </li>
+                    <li>
+                        <p class="font">Verbesserung der Atmung</p>
+                    </li>
+                    <li>
+                        <p class="font">Verbesserung des Herz-Kreislauf-System</p>
+                    </li>
+                </ul>
+            </Tile>
+        </div>
+        <div class="gridRow2 tile5">
+            <Tile Title="CORE TRAINING" NavigateTo="@(basePath + "Kernmuskulatur")">
+                <ul class="font">
+                    <li>
+                        <p class="font">Verbesserung der Körperstabilität</p>
+                    </li>
+                    <li>
+                        <p class="font">Koordination & Kraftentwicklung der Körpermuskulatur</p>
+                    </li>
+                </ul>
+            </Tile>
+        </div>
+        <div class="gridRow3 tile6">
+            <Tile Title="MOBILITY-TRAINING" NavigateTo="@(basePath + "Beweglichkeitstraining")">
+                <ul class="font">
+                    <li>
+                        <p class="font">Verbesserung der Beweglichkeit</p>
+                    </li>
+                    <li>
+                        <p class="font">Verbesserung der Mobiliät & Flexibilität</p>
+                    </li>
+                    <li>
+                        <p class="font">durch neuronales Training, Faszientraining etc.</p>
+                    </li>
+                </ul>
+            </Tile>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string basePath = "/booking-checkout/";
+}

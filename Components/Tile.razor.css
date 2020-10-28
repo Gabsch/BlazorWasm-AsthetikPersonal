@@ -1,0 +1,39 @@
+﻿.tileContainer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tileText {
+    font: normal normal normal 25px/1.4em anton, sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+.tile {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #F5F50A;
+    word-wrap: break-word;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.description {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #F5F50A;
+    word-wrap: break-word;
+    text-align: start;
+    display: flex;
+    justify-content: top;
+    text-align: left;
+    flex-direction: column;
+}
+

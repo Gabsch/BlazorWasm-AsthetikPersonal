@@ -1,0 +1,31 @@
+﻿@inject NavigationManager NavigationManager
+
+<div class="tileContainer">
+    <FlipContainer>
+        <Front>
+            <div class="tile">
+                <h5 class="tileText" style="padding-top: 50px">
+                    <span>@Title</span>
+                </h5>
+            </div>
+        </Front>
+        <Rear>
+            <div class="description" @onclick="@(e => NavigationManager.NavigateTo(NavigateTo))">
+                <div class="tileText">
+                    @ChildContent
+                </div>
+            </div>
+        </Rear>
+    </FlipContainer>
+</div>
+
+@code {
+    [Parameter]
+    public string NavigateTo { get; set; }
+
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

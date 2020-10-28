@@ -1,0 +1,25 @@
+﻿.checkout-button {
+    padding: 8px 16px;
+    background-color: rgb(230, 231, 46);
+    border-width: 0px;
+    color: rgb(97, 97, 97);
+    cursor: pointer;
+    outline: none;
+    display: block;
+    text-decoration: none;
+    user-select: none;
+    font: normal normal normal 16px/1.5em spinnaker,sans-serif;
+    transition: background 1s;
+}
+
+    .checkout-button:hover, .checkout-button:focus {
+        background-image: radial-gradient(circle, transparent 1%, rgba(230, 231, 46, 0.7) 1%);
+        background-position: center;
+        background-size: 15000%;
+    }
+
+    .checkout-button:active {
+        transition: background 0s;
+        background-color: rgba(230, 231, 46, 0.4);
+        background-size: 100%;
+    }

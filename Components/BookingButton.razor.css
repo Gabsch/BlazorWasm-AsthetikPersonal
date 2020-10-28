@@ -1,0 +1,29 @@
+﻿.booking-button {
+    max-width: 200px;
+    height: 5vh;
+    padding: 8px 16px;
+    background-color: transparent;
+    border-width: 3px;
+    border: solid;
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    text-decoration: none;
+    user-select: none;
+    font: normal normal normal 16px/1.5em spinnaker,sans-serif;
+    transition: background 2s;
+}
+
+    .booking-button:hover, .booking-button:focus {
+        background-image: radial-gradient(circle, transparent 1%, rgba(230, 231, 46, 0.9) 1%);
+        background-position: center;
+        background-size: 15000%;
+        border-color: rgba(230, 231, 46, 0.9);
+    }
+
+    .booking-button:active {
+        transition: background 0s;
+        background-color: rgba(230, 231, 46, 0.4);
+        background-size: 100%;
+    }

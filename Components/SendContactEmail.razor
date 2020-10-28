@@ -1,0 +1,37 @@
+﻿@using System.Net.Mail;
+
+<TextContainer Title="KONTAKT" Id="text-contact" BackgroundColor="#82E4D5">
+    <div class="flexContainer" style="flex-direction:column;">
+        <div style="margin: 7px 0px 4px 0">
+            <div>
+                <input class="inputStyle" type="text" required="" placeholder="Name" @bind="@name" maxlength="100" style="padding-left: 1px; height: 33px">
+            </div>
+            <div>
+                <input class="inputStyle" type="text" required="" placeholder="E-Mail-Adresse" @bind="@email" maxlength="100" style="padding-left: 1px; height: 33px">
+            </div>
+            <div>
+                <textarea class="inputStyle" placeholder="Nachricht" @bind="@message" style="padding-left: 1px; padding-right: 10px; height: 180px; resize: none"></textarea>
+            </div>
+            <div class="flex-row">
+                <button class="buttonStyle" style="cursor:pointer" @onclick="SendContactMail">Senden</button>
+            </div>
+        </div>
+        <div>
+            <div>Antonia Knupfer</div>
+            <div>Tegernseer Landstraße 36, 81541 München</div>
+            <div>Tel: 12345/67890</div>
+            <div>antonia@asthetik-personal.com</div>
+        </div>
+    </div>
+</TextContainer>
+
+@code {
+    private string name;
+    private string email;
+    private string message;
+
+    private void SendContactMail()
+    {
+        new SmtpClient().Send();
+    }
+}

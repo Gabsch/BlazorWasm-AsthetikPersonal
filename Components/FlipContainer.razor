@@ -1,0 +1,18 @@
+﻿<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    <div class="flipper">
+        <div class="face">
+            @Front
+        </div>
+        <div class="back">
+            @Rear
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment Front { get; set; }
+
+    [Parameter]
+    public RenderFragment Rear { get; set; }
+}

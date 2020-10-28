@@ -1,0 +1,43 @@
+﻿@using Gabsch.AsthetikPersonal.Models;
+@using System.Linq;
+@inject HttpClient Http
+@page "/booking-checkout/{ItemName}"
+
+<div class="flexContainer flex-row vh-75">
+    <div class="vh-30 centered flexContainer flex-column justify-content-around font align-self-center">
+        @if (item != null)
+        {
+            <h3>@item.DisplayName</h3>
+            <h4>@item.Time | @item.Price €</h4>
+            <div class="centered">
+                @* <a href="mailto:me@me.com?subject=Me&body=<b>ME</b>">Mail me</a> *@
+                <button class="checkout-button" style="width: 1fr" onclick="window.location.href='mailto:antonia@asthetik-personal.com'">Buchungsanfrage stellen</button>
+            </div>
+            <p class="text-center">@(new MarkupString(item.Description.Replace("\n", "<br />")))</p>
+
+            <h4>Ort &amp; Kontaktdetails</h4>
+            <p>E-Mail-Adresse: antonia@asthetik-personal.com</p>
+        }
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter]
+    public string ItemName { get; set; }
+
+    private BookingItem item;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var items = await Http.GetFromJsonAsync<BookingItem[]>("sample-data/bookingItems.json");
+        Console.WriteLine(ItemName);
+        item = items.First(i => i.DisplayName == ItemName);
+    }
+
+    private void OnClick()
+    {
+        
+    }
+}

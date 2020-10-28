@@ -1,0 +1,26 @@
+﻿.font {
+    font-family: spinnaker,sans-serif;
+    color: #616161;
+    margin: 0;
+}
+
+h1 {
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.checkout-button {
+    padding: 8px 16px;
+    background-color: rgb(230, 231, 46);
+    border-width: 0px;
+    color: rgb(97, 97, 97);
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    font: normal normal normal 16px/1.5em spinnaker,sans-serif;
+    transition: background 1s;
+}
+
+.vh-30 {
+    height: 30vh;
+}

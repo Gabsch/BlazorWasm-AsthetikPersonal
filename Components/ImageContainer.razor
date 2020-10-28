@@ -1,0 +1,37 @@
+﻿<div class="parallax d-flex flex-column justify-content-center @GetImageVerticalHeight()" style="background-image: url(@ImagePath);">
+        @ChildContent
+</div>
+
+@code {
+    [Parameter]
+    public string ImagePath { get; set; }
+
+    [Parameter]
+    public ImageVh? ImageHeight { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+
+    private string GetImageVerticalHeight()
+    {
+        switch (ImageHeight)
+        {
+            case ImageVh.Small:
+                return "vh-50";
+            case ImageVh.Medium:
+                return "vh-75";
+            case ImageVh.Maximum:
+                return "vh-100";
+            default:
+                return "vh-100";
+        }
+    }
+
+    public enum ImageVh
+    {
+        Small,
+        Medium,
+        Maximum
+    }
+}
