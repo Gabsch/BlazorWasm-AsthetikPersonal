@@ -1,6 +1,7 @@
 /* /Components/BookingButton.razor.rz.scp.css */
 .booking-button[b-jgri1ifsp7] {
     max-width: 200px;
+    min-height: 3em;
     height: 5vh;
     padding: 8px 16px;
     background-color: transparent;
