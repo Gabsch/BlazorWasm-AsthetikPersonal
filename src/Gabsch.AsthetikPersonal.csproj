@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DevExpressBlazor\tools\DevExpress.Blazor.AnchorUtils\DevExpress.Blazor.AnchorUtils.csproj" />
+    <ProjectReference Include="..\tools\DevExpress.Blazor.AnchorUtils\DevExpress.Blazor.AnchorUtils.csproj" />
   </ItemGroup>
 
 </Project>
