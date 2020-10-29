@@ -14,7 +14,7 @@
 }
 
 .gridRow1 {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: inherit;
 }
 
 .gridRow2 {
