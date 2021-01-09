@@ -84,42 +84,8 @@ span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, t
     text-align: center
 }
 
-.inputStyle {
-    border-color: rgba(255, 255, 255, 1);
-    border-width: 0 0 2px 0;
-    background: transparent;
-    word-break: break-word;
-    display: inline-block;
-    position: relative;
-    width: 480px;
-    flex: 1;
-}
-
-.buttonStyle {
-    font: normal normal normal 16px/1.4em spinnaker,sans-serif;
-    transition: color 0.4s ease 0s;
-    color: #FFFFFF;
-    display: inline-block;
-    border-color: rgba(255, 255, 255, 1);
-    border-width: 0;
-    background: transparent;
-    display: inline-block;
-    position: relative;
-    flex: 1;
-}
-
-    .buttonStyle:focus {
-        outline: 0;
-        color: rgba(97, 97, 97, 1);
-    }
-
 :focus {
     outline: 0;
-}
-
-.main-heading {
-    font: normal normal normal 40px/1.4em spinnaker,sans-serif;
-    color: #FFFFFF;
 }
 
 .vh-75 {

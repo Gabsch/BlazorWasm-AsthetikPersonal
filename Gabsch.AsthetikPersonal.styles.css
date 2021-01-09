@@ -31,36 +31,32 @@
     }
 /* /Components/BookingInfoList.razor.rz.scp.css */
 .booking-container[b-px534xb21c] {
-    border-bottom: solid 0.5px;
-    border-color: grey;
+    border: none;
 }
 
 .booking-info-container[b-px534xb21c] {
     position: static;
     height: auto;
-    display: grid;
-    grid-column-gap: 32px;
-    border-top: solid 0.5px;
-    border-color: grey;
-    grid-template-areas: "name name name name name content content content button button button";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr minmax(0,1fr) 1fr 1fr 1fr 1fr;
+    border: 0.5px solid;
+    border-color: #cccccc;
+    margin-bottom: 2vh;
 }
 
 .booking-item[b-px534xb21c] {
     background-color: white;
-    padding: calc(32px - 0px);
+    padding: 1vh;
 }
 
 .item-name[b-px534xb21c] {
-    grid-area: name;
+    text-align: center;
 }
 
 .item-content[b-px534xb21c] {
-    grid-area: content;
+    text-align: center;
 }
 
 .item-button[b-px534xb21c] {
-    grid-area: button;
+    text-align: center;
 }
 
 .font[b-px534xb21c] {
@@ -68,18 +64,57 @@
     color: #616161;
     margin: 0;
 }
+
+@media only screen and (min-width: 768px) {
+    .item-name[b-px534xb21c] {
+        grid-area: name;
+        text-align: inherit;
+    }
+
+    .item-content[b-px534xb21c] {
+        grid-area: content;
+        text-align: inherit;
+    }
+
+    .item-button[b-px534xb21c] {
+        text-align: inherit;
+        grid-area: button;
+    }
+
+    .booking-item[b-px534xb21c] {
+        padding: calc(32px - 0px);
+    }
+
+    .booking-info-container[b-px534xb21c] {
+        position: static;
+        height: auto;
+        display: grid;
+        grid-column-gap: 32px;
+        border: none;
+        border-top: solid 0.5px;
+        border-color: #cccccc;
+        grid-template-areas: "name name name name name content content content button button button";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr minmax(0,1fr) 1fr 1fr 1fr 1fr;
+    }
+
+    .booking-container[b-px534xb21c] {
+        border-bottom: solid 0.5px;
+        border-color: #cccccc;
+    }
+}
 /* /Components/CardArray.razor.rz.scp.css */
 .grid-container[b-h7tw66lurb] {
+    margin-top: 2rem;
     position: static;
     height: auto;
     display: grid;
-    grid-gap: 10px;
-    grid-template-rows: min-content min-content 1fr;
-    grid-template-columns: min-content min-content 1fr;
+    grid-gap: 0;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: min-content;
 }
 
 .heading5[b-h7tw66lurb] {
-    font: normal normal normal 25px/1.4em anton, sans-serif;
+    font: normal normal normal 25px/1.4em spinnaker, sans-serif;
     color: #303030;
 }
 
@@ -95,12 +130,12 @@
 }
 
 .card-tile[b-h7tw66lurb] {
-    margin-right: 3px;
-    padding-top: 80px;
-    padding-bottom: 20px;
-    padding-right: 35px;
-    padding-left: 35px;
-    min-width: 350px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-right: 4vh;
+    padding-left: 4vh;
+    min-width: 85vw;
+    box-sizing: content-box;
 }
 
 .first-card[b-h7tw66lurb] {
@@ -119,13 +154,31 @@
         grid-column: 2;
         background-color: #F5F50A;
     }
+
+    .grid-container[b-h7tw66lurb] {
+        position: static;
+        height: auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: min-content min-content;
+        grid-template-columns: min-content min-content;
+    }
+
+    .card-tile[b-h7tw66lurb] {
+        margin-right: 3px;
+        padding-top: 5vh;
+        padding-bottom: 20px;
+        padding-right: 35px;
+        padding-left: 35px;
+        min-width: 15vw;
+    }
 }
 /* /Components/CheckoutButton.razor.rz.scp.css */
 .checkout-button[b-7yzgrea29u] {
     padding: 8px 16px;
     background-color: rgb(230, 231, 46);
     border-width: 0px;
-    color: rgb(97, 97, 97);
+    color: black;
     cursor: pointer;
     outline: none;
     display: block;
@@ -146,10 +199,65 @@
         background-color: rgba(230, 231, 46, 0.4);
         background-size: 100%;
     }
+/* /Components/ContactArea.razor.rz.scp.css */
+.input-style[b-rhs78wdfm9] {
+    border-color: rgba(255, 255, 255, 1);
+    border-width: 0 0 2px 0;
+    background: transparent;
+    word-break: break-word;
+    display: inline-block;
+    position: relative;
+    width: 75vw;
+    flex: 1;
+}
+
+.text-area[b-rhs78wdfm9] {
+    padding-left: 0.2vh;
+    padding-right: 1vw;
+    height: 19vh;
+    resize: none
+}
+
+.text-box[b-rhs78wdfm9] {
+    padding-left: 0.2vw;
+    height: 33px
+}
+
+.button-style[b-rhs78wdfm9] {
+    font: normal normal normal 16px/1.4em spinnaker,sans-serif;
+    transition: color 0.4s ease 0s;
+    color: #FFFFFF;
+    display: inline-block;
+    border-color: rgba(255, 255, 255, 1);
+    border-width: 0;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    flex: 1;
+}
+
+    .button-style:focus[b-rhs78wdfm9] {
+        outline: 0;
+        color: rgba(97, 97, 97, 1);
+    }
+
+
+@media only screen and (min-width: 768px) {
+    .input-style[b-rhs78wdfm9] {
+        border-color: rgba(255, 255, 255, 1);
+        border-width: 0 0 2px 0;
+        background: transparent;
+        word-break: break-word;
+        display: inline-block;
+        position: relative;
+        width: 25vw;
+        flex: 1;
+    }
+}
 /* /Components/FlipContainer.razor.rz.scp.css */
 /* entire container, keeps perspective */
 .flip-container[b-vdlxsa35xf] {
-    perspective: 1000px;
+    perspective: 500px;
 }
     /* flip the pane when hovered */
     .flip-container:hover .flipper[b-vdlxsa35xf], .flip-container.hover .flipper[b-vdlxsa35xf] {
@@ -157,8 +265,8 @@
     }
 
 .flip-container[b-vdlxsa35xf], .face[b-vdlxsa35xf], .back[b-vdlxsa35xf] {
-    width: 200px;
-    height: 200px;
+    width: 21vh;
+    height: 21vh;
 }
 
 /* flip speed goes here */
@@ -188,12 +296,23 @@
     transform: rotateY(180deg);
     cursor: pointer;
 }
+
+/*HACK: deactivate flip for mobile*/
+@media only screen and (max-width: 768px) {
+    .flip-container:hover .flipper[b-vdlxsa35xf], .flip-container.hover .flipper[b-vdlxsa35xf] {
+        transform: rotateY(0deg);
+    }
+}
 /* /Components/ImageContainer.razor.rz.scp.css */
 .parallax[b-tzu8w57jyw] {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.child-container[b-tzu8w57jyw] {
+    padding: 1rem;
 }
 /* /Components/TextContainer.razor.rz.scp.css */
 .textContainer[b-x9wcltsnev] {
@@ -209,19 +328,17 @@
 }
 
 .tileText[b-g2rouxcf1h] {
-    font: normal normal normal 25px/1.4em anton, sans-serif;
+    font: normal normal normal 1em spinnacker, sans-serif;
+    font-weight: bold;
     color: black;
     cursor: pointer;
 }
 
 .tile[b-g2rouxcf1h] {
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    padding: 5px;
+    width: 21vh;
+    height: 21vh;
+    padding: 1vh;
     background-color: #F5F50A;
-    word-wrap: break-word;
-    text-align: start;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -229,23 +346,27 @@
 }
 
 .description[b-g2rouxcf1h] {
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    padding: 5px;
+    width: 21vh;
+    height: 21vh;
+    padding: 1vh;
     background-color: #F5F50A;
-    word-wrap: break-word;
-    text-align: start;
     display: flex;
-    justify-content: top;
+    justify-content: flex-start;
     text-align: left;
     flex-direction: column;
 }
 
+@media only screen and (min-width: 768px) {
+    .tileText[b-g2rouxcf1h] {
+        font: normal normal normal 25px/1.4em spinnacker, sans-serif;
+        color: black;
+        cursor: pointer;
+    }
+}
 /* /Components/TilesArray.razor.rz.scp.css */
 .font[b-in8aah7bya] {
     font: normal normal normal 14px/1.4em spinnaker, sans-serif;
-    color: #616161;
+    /*color: #616161;*/
     margin: 0;
 }
 
@@ -253,7 +374,7 @@
     position: static;
     height: auto;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 1vh;
     grid-template-rows: min-content min-content 1fr;
     grid-template-columns: min-content min-content 1fr;
 }
@@ -305,6 +426,24 @@ ul[b-in8aah7bya] {
 
     .gridRow3[b-in8aah7bya] {
         grid-area: 3 / 1 / 4 / 1;
+    }
+}
+/* /Components/TopArea.razor.rz.scp.css */
+.main-heading[b-3rlumiz67v] {
+    font: normal normal normal 40px/1.4em spinnaker,sans-serif;
+    color: #FFFFFF;
+}
+
+.booking[b-3rlumiz67v] {
+    display: flex;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-heading[b-3rlumiz67v] {
+        font: normal normal normal 40px/1.4em spinnaker,sans-serif;
+        color: #FFFFFF;
+        padding: 2rem;
     }
 }
 /* /Pages/Booking.razor.rz.scp.css */
