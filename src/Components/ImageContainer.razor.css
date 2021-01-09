@@ -4,3 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.child-container {
+    padding: 1rem;
+}

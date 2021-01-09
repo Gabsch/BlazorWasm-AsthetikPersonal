@@ -1,6 +1,6 @@
 ﻿/* entire container, keeps perspective */
 .flip-container {
-    perspective: 1000px;
+    perspective: 500px;
 }
     /* flip the pane when hovered */
     .flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -8,8 +8,8 @@
     }
 
 .flip-container, .face, .back {
-    width: 200px;
-    height: 200px;
+    width: 21vh;
+    height: 21vh;
 }
 
 /* flip speed goes here */
@@ -38,4 +38,11 @@
 .back {
     transform: rotateY(180deg);
     cursor: pointer;
+}
+
+/*HACK: deactivate flip for mobile*/
+@media only screen and (max-width: 768px) {
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(0deg);
+    }
 }

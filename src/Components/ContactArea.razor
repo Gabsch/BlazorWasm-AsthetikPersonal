@@ -2,18 +2,19 @@
 
 <TextContainer Title="KONTAKT" Id="text-contact" BackgroundColor="#82E4D5">
     <div class="flexContainer" style="flex-direction:column;">
-        <div style="margin: 7px 0px 4px 0">
+        <div style="margin: 2vh 0px 1vh 0">
             <div>
-                <input class="inputStyle" type="text" required="" placeholder="Name" @bind="@name" maxlength="100" style="padding-left: 1px; height: 33px">
+                <input class="input-style text-box" type="text" required="" placeholder="Name" @bind="@name" maxlength="100">
             </div>
             <div>
-                <input class="inputStyle" type="text" required="" placeholder="E-Mail-Adresse" @bind="@email" maxlength="100" style="padding-left: 1px; height: 33px">
+                <input class="input-style text-box" type="text" required="" placeholder="E-Mail-Adresse" @bind="@email" maxlength="100">
             </div>
             <div>
-                <textarea class="inputStyle" placeholder="Nachricht" @bind="@message" style="padding-left: 1px; padding-right: 10px; height: 180px; resize: none"></textarea>
+                <textarea class="input-style text-area" placeholder="Nachricht" @bind="@message"></textarea>
             </div>
             <div class="flex-row">
-                <button class="buttonStyle" style="cursor:pointer" @onclick="SendContactMail">Senden</button>
+                @* <a href="mailto:me@me.com?subject=Me&body=<b>ME</b>">Mail me</a> *@
+                <button class="button-style" style="cursor:pointer" @*@onclick="SendContactMail" *@ onclick="window.location.href='mailto:antonia@asthetik-personal.com?subject=Anfrage%20von%20@(name)&body=@(message)'">Senden</button>
             </div>
         </div>
         <div>

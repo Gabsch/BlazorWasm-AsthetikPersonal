@@ -1,0 +1,17 @@
+﻿.main-heading {
+    font: normal normal normal 40px/1.4em spinnaker,sans-serif;
+    color: #FFFFFF;
+}
+
+.booking {
+    display: flex;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-heading {
+        font: normal normal normal 40px/1.4em spinnaker,sans-serif;
+        color: #FFFFFF;
+        padding: 2rem;
+    }
+}

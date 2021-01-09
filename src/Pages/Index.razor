@@ -1,16 +1,7 @@
 ﻿@page "/"
 
-<ImageContainer ImagePath="https://static.wixstatic.com/media/4b7a26_0dcab501742f41f3b89faa7d59d96439~mv2_d_2048_1365_s_2.png/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01/4b7a26_0dcab501742f41f3b89faa7d59d96439~mv2_d_2048_1365_s_2.webp">
-    <div class="main-heading" style="padding-left: 40%; padding-top: 0;">
-        <div>ASTHETIK</div>
-        <div>PERSONAL</div>
-        <div>FITNESS TRAINER</div>
-        <div style="display: flex; text-align: center;" class="mt-5">
-            <BookingButton />
-        </div>
-    </div>
-</ImageContainer>
-<TextContainer Title="ÜBER MICH" Id="text-about" BackgroundColor="#F5F50A">
+<TopArea />
+<TextContainer Title="ÜBER MICH" Id="text-about" BackgroundColor="#f9f94f">
     <div class="flexContainer">
         <div style="width: 480px;">
             <h4 style="font-size: 18px">Hallo und Servus!</h4>
@@ -22,7 +13,7 @@
 </TextContainer>
 <ImageContainer ImagePath="https://static.wixstatic.com/media/84770f_8506293a29b44887a8a0cb383c0c2078.jpg/v1/fill/w_1903,h_839,al_c,q_85,usm_0.66_1.00_0.01/84770f_8506293a29b44887a8a0cb383c0c2078.webp">
     <CardArray />
-    <div class="flexContainer mt-5">
+    <div class="flexContainer m-5">
         <BookingButton />
     </div>
 </ImageContainer>
@@ -43,34 +34,4 @@
 <ImageContainer ImagePath="https://static.wixstatic.com/media/84770f_98e3c16564e8460f928638971295c790.jpg/v1/fill/w_1903,h_735,al_c,q_85,usm_0.66_1.00_0.01/84770f_98e3c16564e8460f928638971295c790.webp">
     <TilesArray />
 </ImageContainer>
-<TextContainer Title="KONTAKT" Id="text-contact" BackgroundColor="#82E4D5">
-    <div class="flexContainer" style="flex-direction:column;">
-        <div style="margin: 7px 0px 4px 0">
-            <div>
-                <input class="inputStyle" type="text" required="" placeholder="Name" @bind="@name" maxlength="100" style="padding-left: 1px; height: 33px">
-            </div>
-            <div>
-                <input class="inputStyle" type="text" required="" placeholder="E-Mail-Adresse" @bind="@email" maxlength="100" style="padding-left: 1px; height: 33px">
-            </div>
-            <div>
-                <textarea class="inputStyle" placeholder="Nachricht" @bind="@message" style="padding-left: 1px; padding-right: 10px; height: 180px; resize: none"></textarea>
-            </div>
-            <div class="flex-row">
-                @* <a href="mailto:me@me.com?subject=Me&body=<b>ME</b>">Mail me</a> *@
-                <button class="buttonStyle" style="cursor:pointer" onclick="window.location.href='mailto:antonia@asthetik-personal.com?subject=Anfrage%20von%20@(name)&body=@(message)'">Senden</button>
-            </div>
-        </div>
-        <div>
-            <div>Antonia Knupfer</div>
-            <div>Tegernseer Landstraße 36, 81541 München</div>
-            <div>Tel: 12345/67890</div>
-            <div>antonia@asthetik-personal.com</div>
-        </div>
-    </div>
-</TextContainer>
-
-@code {
-    private string name;
-    private string email;
-    private string message;
-}
+<ContactArea />

@@ -1,5 +1,7 @@
-﻿<div class="parallax d-flex flex-column justify-content-center @GetImageVerticalHeight()" style="background-image: url(@ImagePath);">
+﻿<div class="parallax d-flex flex-column justify-content-center" style="background-image: url(@ImagePath); min-height: @GetImageVerticalHeight()">
+    <div class="child-container">
         @ChildContent
+    </div>
 </div>
 
 @code {
@@ -18,13 +20,13 @@
         switch (ImageHeight)
         {
             case ImageVh.Small:
-                return "vh-50";
+                return "50vh";
             case ImageVh.Medium:
-                return "vh-75";
+                return "75vh";
             case ImageVh.Maximum:
-                return "vh-100";
+                return "100vh";
             default:
-                return "vh-100";
+                return "100vh";
         }
     }
 
