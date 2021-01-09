@@ -14,7 +14,8 @@
             </div>
             <div class="flex-row">
                 @* <a href="mailto:me@me.com?subject=Me&body=<b>ME</b>">Mail me</a> *@
-                <button class="button-style" style="cursor:pointer" @*@onclick="SendContactMail" *@ onclick="window.location.href='mailto:antonia@asthetik-personal.com?subject=Anfrage%20von%20@(name)&body=@(message)'">Senden</button>
+                <button class="button-style" style="cursor:pointer" onclick="window.location.href='mailto:antonia@asthetik-personal.com?subject=Anfrage%20von%20@(name)&body=@(message)'">Senden</button>
+                @*<button class="button-style" style="cursor:pointer" @onclick="SendContactMail">Senden</button>*@
             </div>
         </div>
         <div>
