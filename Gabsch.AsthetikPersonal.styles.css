@@ -564,12 +564,7 @@ h1[b-mvqtx64rg6] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-@media (min-width: 768px) {
 
-    .navbar-toggler[b-4xmar66ak0] {
-        display: none;
-    }
-}
 
 /*.top-row {
     height: 3.5rem;
@@ -619,13 +614,4 @@ h1[b-mvqtx64rg6] {
     color: white;
 }*/
 
-@media (min-width: 641px) {
-    .navbar-toggler[b-4xmar66ak0] {
-        display: none;
-    }
 
-    .collapse[b-4xmar66ak0] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-    }
-}
