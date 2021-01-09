@@ -4,7 +4,7 @@
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="@NavMenuCssClass collapse navbar-collapse">
+        <div class="@NavMenuCssClass navbar-collapse">
             <a class="navbar-brand" href="#">
                 <b>A</b>STHETI<b>K</b> PERSONAL
             </a>
@@ -49,9 +49,9 @@
 </nav>
 
 @code {
-    private bool collapseNavMenu = false;
+    private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : string.Empty;
 
     private void ToggleNavMenu()
     {
