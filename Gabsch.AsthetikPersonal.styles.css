@@ -476,6 +476,7 @@ h1[b-mvqtx64rg6] {
 
 .checkout-button[b-mvqtx64rg6] {
     padding: 8px 16px;
+    margin: 1vh;
     background-color: rgb(230, 231, 46);
     border-width: 0px;
     color: rgb(97, 97, 97);
