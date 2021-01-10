@@ -302,6 +302,11 @@
     .flip-container:hover .flipper[b-vdlxsa35xf], .flip-container.hover .flipper[b-vdlxsa35xf] {
         transform: rotateY(0deg);
     }
+
+    .flip-container[b-vdlxsa35xf], .face[b-vdlxsa35xf], .back[b-vdlxsa35xf] {
+        width: 25vh;
+        height: 25vh;
+    }
 }
 /* /Components/ImageContainer.razor.rz.scp.css */
 .parallax[b-tzu8w57jyw] {
@@ -335,8 +340,8 @@
 }
 
 .tile[b-g2rouxcf1h] {
-    width: 21vh;
-    height: 21vh;
+    width: 25vh;
+    height: 25vh;
     padding: 1vh;
     background-color: #F5F50A;
     display: flex;
@@ -346,8 +351,8 @@
 }
 
 .description[b-g2rouxcf1h] {
-    width: 21vh;
-    height: 21vh;
+    width: 25vh;
+    height: 25vh;
     padding: 1vh;
     background-color: #F5F50A;
     display: flex;
@@ -361,6 +366,16 @@
         font: normal normal normal 25px/1.4em spinnacker, sans-serif;
         color: black;
         cursor: pointer;
+    }
+
+    .tile[b-g2rouxcf1h] {
+        width: 21vh;
+        height: 21vh;
+    }
+    
+    .description[b-g2rouxcf1h] {
+        width: 21vh;
+        height: 21vh;
     }
 }
 /* /Components/TilesArray.razor.rz.scp.css */
