@@ -5,26 +5,30 @@
 <div class="container-centered">
     @if (bookingItems != null)
     {
-    <div class="gridContainer">
-        @foreach (var (item, index) in bookingItems.Select((value, i) => (value, i + 1)))
-        {
-            <div class="@("gridRow" + item.Row) @("tile" + index)">
-                <Tile Title="@(item.AlternateName.ToUpper().Titleize())" NavigateTo="@(basePath + item.DisplayName)">
-                    @if (item.BulletPoints != null)
-                    {
-                    <ul class="font">
-                        @foreach (var bulletPoint in item.BulletPoints)
+        <div class="gridContainer">
+            @foreach (var (item, index) in bookingItems.Select((value, i) => (value, i + 1)))
+            {
+                <div class="@("gridRow" + item.Row) @("tile" + index)">
+                    <Tile Title="@(item.AlternateName.ToUpper().Titleize())" NavigateTo="@(basePath + item.DisplayName)">
+                        @if (item.BulletPoints != null)
                         {
-                            <li>
-                                <p class="font">@bulletPoint</p>
-                            </li>
+                            <ul class="font">
+                                @foreach (var bulletPoint in item.BulletPoints)
+                                {
+                                    <li>
+                                        <p class="font">@bulletPoint</p>
+                                    </li>
+                                }
+                            </ul>
                         }
-                    </ul>
-                    }
-                </Tile>
-            </div>
-        }
-    </div>
+                    </Tile>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p><em>Loading...</em></p>
     }
 </div>
 

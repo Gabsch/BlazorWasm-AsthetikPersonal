@@ -6,13 +6,18 @@
 <TextContainer Title="Online Buchen" Id="text-booking" BackgroundColor="#F5F50A">
     <div class="flexContainer">
         <div style="width: 480px;">
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <p>Du willst gleich loslegen? Dann stell doch eine Buchungsanfrage.</p>
+            <p>Bitte beachte, dass eine Buchungsanfrage bis zur Bestätigung unverbindlich ist.</p>
         </div>
     </div>
 </TextContainer>
 @if (bookingItems != null)
 {
     <BookingInfoList BookingItems="@bookingItems" />
+}
+else
+{
+    <p><em>Loading...</em></p>
 }
 <ImageContainer ImageHeight="ImageContainer.ImageVh.Small" ImagePath="https://static.wixstatic.com/media/84770f_bde37e8517a54f3d8e23d7320d0a8c52.jpg/v1/fill/w_1903,h_937,al_c,q_85,usm_0.66_1.00_0.01/84770f_bde37e8517a54f3d8e23d7320d0a8c52.webp" />
 
