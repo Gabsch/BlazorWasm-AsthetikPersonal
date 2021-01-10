@@ -3,8 +3,8 @@
 @inject HttpClient Http
 @page "/booking-checkout/{ItemName}"
 
-<div class="flexContainer flex-row vh-75">
-    <div class="vh-30 centered flexContainer flex-column justify-content-around font align-self-center">
+<div class="flexContainer flex-row font" style="margin-top: 80px;">
+    <div class="centered flexContainer flex-column justify-content-around align-self-center">
         @if (item != null)
         {
             <h3>@item.DisplayName</h3>
@@ -15,13 +15,13 @@
             </div>
             <p class="text-center">@(new MarkupString(item.Description.Replace("\n", "<br />")))</p>
 
-            <h4>Ort &amp; Kontaktdetails</h4>
-            <p>E-Mail-Adresse: antonia@asthetik-personal.com</p>
+            <div class="m-3">
+                <h4>Ort &amp; Kontaktdetails</h4>
+                <p>E-Mail-Adresse: antonia@asthetik-personal.com</p>
+            </div>
         }
     </div>
 </div>
-
-
 
 @code {
     [Parameter]
