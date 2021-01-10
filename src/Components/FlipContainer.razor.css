@@ -45,4 +45,9 @@
     .flip-container:hover .flipper, .flip-container.hover .flipper {
         transform: rotateY(0deg);
     }
+
+    .flip-container, .face, .back {
+        width: 25vh;
+        height: 25vh;
+    }
 }

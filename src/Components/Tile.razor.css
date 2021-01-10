@@ -11,8 +11,8 @@
 }
 
 .tile {
-    width: 21vh;
-    height: 21vh;
+    width: 25vh;
+    height: 25vh;
     padding: 1vh;
     background-color: #F5F50A;
     display: flex;
@@ -22,8 +22,8 @@
 }
 
 .description {
-    width: 21vh;
-    height: 21vh;
+    width: 25vh;
+    height: 25vh;
     padding: 1vh;
     background-color: #F5F50A;
     display: flex;
@@ -37,5 +37,15 @@
         font: normal normal normal 25px/1.4em spinnacker, sans-serif;
         color: black;
         cursor: pointer;
+    }
+
+    .tile {
+        width: 21vh;
+        height: 21vh;
+    }
+    
+    .description {
+        width: 21vh;
+        height: 21vh;
     }
 }
