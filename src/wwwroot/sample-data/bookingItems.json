@@ -1,6 +1,6 @@
 ﻿[
   {
-    "DisplayName": "Functional Training",
+    "DisplayName": "Functional-Training",
     "AlternateName": "Functional-Training",
     "Time": "45 Min.",
     "Description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,\n sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\n sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.\n Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,\n consetetur sadipscing elitr,\n sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\n sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.\n Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
@@ -35,13 +35,13 @@
     "Row": 1,
     "BulletPoints": [
       "Ernährung",
-      "Stoffwechselregulation",
+      "Regulierung des Stoffwechsels",
       "Reduktion des Körperfetts"
     ]
   },
   {
     "DisplayName": "Cardio-Fitness",
-    "AlternateName": "Cardio / Asudauer-Training",
+    "AlternateName": "Cardio / Ausdauer-Training",
     "Description": "Herz",
     "Time": "45 Min.",
     "Price": 99,
