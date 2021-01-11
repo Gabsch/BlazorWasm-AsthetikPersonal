@@ -9,7 +9,7 @@
             @foreach (var (item, index) in bookingItems.Select((value, i) => (value, i + 1)))
             {
                 <div class="@("gridRow" + item.Row) @("tile" + index)">
-                    <Tile Title="@(item.AlternateName.ToUpper().Titleize())" NavigateTo="@(basePath + item.DisplayName)">
+                    <Tile Title="@(item.AlternateName.ToUpper().Titleize())" IconPath="@item.IconPath" NavigateTo="@(basePath + item.DisplayName)">
                         @if (item.BulletPoints != null)
                         {
                             <ul class="font">

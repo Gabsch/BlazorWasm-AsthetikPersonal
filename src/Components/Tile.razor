@@ -4,9 +4,21 @@
     <FlipContainer>
         <Front>
             <div class="tile">
-                <h5 class="tileText container-centered">
-                    <span>@Title</span>
-                </h5>
+                @if (string.IsNullOrEmpty(IconPath))
+                {
+                    <h5 class="tileText container-centered">
+                        <span>@Title</span>
+                    </h5>
+                }
+                else
+                {
+                    <div>
+                        <img src="@IconPath" />
+                    </div>
+                    <h5 class="tileText">
+                        <span>@Title</span>
+                    </h5>
+                }
             </div>
         </Front>
         <Rear>
@@ -25,6 +37,9 @@
 
     [Parameter]
     public string Title { get; set; }
+
+    [Parameter]
+    public string IconPath { get; set; }
 
     [Parameter]
     public RenderFragment ChildContent { get; set; }

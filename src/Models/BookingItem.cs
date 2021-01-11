@@ -10,6 +10,7 @@ namespace Gabsch.AsthetikPersonal.Models
         public string DisplayName { get; set; }
         public string AlternateName { get; set; }
         public string Description { get; set; }
+        public string IconPath { get; set; }
         public string Time{ get; set; }
         public decimal Price { get; set; }
         public int Row { get; set; }
