@@ -41,13 +41,13 @@
 .second-card {
     grid-area: 1 / 2 / 1 / 1;
     grid-column-start: 1;
-    background-color: #F5F50A;
+    background-color: #F9F871;
 }
 
 @media only screen and (min-width: 768px) {
     .second-card {
         grid-column: 2;
-        background-color: #F5F50A;
+        background-color: #F9F871;
     }
 
     .grid-container {
