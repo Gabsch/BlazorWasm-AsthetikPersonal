@@ -4,13 +4,13 @@
     <div class="flexContainer" style="flex-direction:column;">
         <div style="margin: 2vh 0px 1vh 0">
             <div>
-                <input class="input-style text-box" type="text" required="" placeholder="Name" @bind="@name" maxlength="100">
+                <input class="input-style text-box" type="text" required="" placeholder="Name" aria-label="Name"  @bind="@name" maxlength="100">
             </div>
             <div>
-                <input class="input-style text-box" type="text" required="" placeholder="E-Mail-Adresse" @bind="@email" maxlength="100">
+                <input class="input-style text-box" type="text" required="" placeholder="E-Mail-Adresse" aria-label="E-Mail-Adresse" @bind="@email" maxlength="100">
             </div>
             <div>
-                <textarea class="input-style text-area" placeholder="Nachricht" @bind="@message"></textarea>
+                <textarea class="input-style text-area" placeholder="Nachricht" aria-label="Nachricht" @bind="@message"></textarea>
             </div>
             <div class="flex-row">
                 @* <a href="mailto:me@me.com?subject=Me&body=<b>ME</b>">Mail me</a> *@
