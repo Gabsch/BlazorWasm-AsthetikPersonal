@@ -1,6 +1,6 @@
 ﻿@using System.Net.Mail;
 
-<TextContainer Title="KONTAKT" Id="text-contact" BackgroundColor="#82E4D5">
+<TextContainer Title="KONTAKT" Id="text-contact" BackgroundColor="@(string.IsNullOrWhiteSpace(BackgroundColor) ? "#82E4D5" : BackgroundColor)">
     <div class="flexContainer" style="flex-direction:column;">
         <div style="margin: 2vh 0px 1vh 0">
             <div>
@@ -31,6 +31,9 @@
     private string name;
     private string email;
     private string message;
+
+    [Parameter]
+    public string BackgroundColor { get; set; }
 
     private void SendContactMail()
     {
