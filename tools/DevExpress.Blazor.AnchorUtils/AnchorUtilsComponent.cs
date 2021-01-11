@@ -33,7 +33,10 @@ namespace DevExpress.Blazor.AnchorUtils
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
             if (firstRender)
+            {
+                await CheckScrollSpy();
                 await ScrollToAnchor(forceScroll: true);
+            }
 
             await base.OnAfterRenderAsync(firstRender);
         }
@@ -48,6 +51,12 @@ namespace DevExpress.Blazor.AnchorUtils
             var module = await Module;
             if (!string.IsNullOrEmpty(anchor) || forceScroll)
                 await module.InvokeAsync<string>("scrollToAnchor", anchor);
+        }
+
+        private async Task CheckScrollSpy()
+        {
+            var module = await Module;
+            await module.InvokeVoidAsync("checkScrollSpy", null);
         }
 
         void IDisposable.Dispose()

@@ -13,3 +13,14 @@ export function scrollToAnchor(anchor) {
     else
         window.scroll(0, 0);
 }
+
+export function checkScrollSpy() {
+    var scrollSpys = [].slice.call(document.querySelectorAll('[data-spy="scroll"]'));
+    var scrollSpysLength = scrollSpys.length;
+
+    for (var i = scrollSpysLength; i--;) {
+        var $spy = $(scrollSpys[i]);
+
+        $.fn['scrollspy'].call($spy, $spy.data());
+    }
+}
