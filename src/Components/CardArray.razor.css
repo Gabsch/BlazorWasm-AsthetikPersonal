@@ -4,8 +4,8 @@
     height: auto;
     display: grid;
     grid-gap: 0;
-    grid-template-rows: min-content min-content;
-    grid-template-columns: min-content;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
 }
 
 .heading5 {
@@ -29,7 +29,7 @@
     padding-bottom: 3vh;
     padding-right: 4vh;
     padding-left: 4vh;
-    min-width: 85vw;
+    max-width: 33vh;
     box-sizing: content-box;
 }
 
@@ -55,8 +55,8 @@
         height: auto;
         display: grid;
         grid-gap: 10px;
-        grid-template-rows: min-content min-content;
-        grid-template-columns: min-content min-content;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
     }
 
     .card-tile {
