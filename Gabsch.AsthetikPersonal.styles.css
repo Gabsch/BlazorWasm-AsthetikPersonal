@@ -588,10 +588,14 @@ h1[b-mvqtx64rg6] {
 }*/
 
 /*.navbar-brand {
-    font-size: 1.1rem;
+    text-align: left;
+}*/
+
+button:focus[b-4xmar66ak0] {
+    outline: 0;
 }
 
-.oi {
+/*.oi {
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
