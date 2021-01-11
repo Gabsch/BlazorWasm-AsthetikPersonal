@@ -22,7 +22,7 @@
             </div>
         </Front>
         <Rear>
-            <div class="description" @onclick="@(e => NavigationManager.NavigateTo(NavigationManager.BaseUri + NavigateTo))">
+            <div class="description" @onclick="@(e => NavigationManager.NavigateTo(NavigationManager.ToBaseRelativePath(NavigationManager.BaseUri + NavigateTo)))">
                 <div class="tileText">
                     @ChildContent
                 </div>
