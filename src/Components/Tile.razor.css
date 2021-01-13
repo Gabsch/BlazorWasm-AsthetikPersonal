@@ -11,8 +11,8 @@
 }
 
 .tile {
-    width: 25vh;
-    height: 25vh;
+    width: 45vw;
+    height: 45vw;
     padding: 1vh;
     background-color: #F9F871;
     display: flex;
@@ -22,8 +22,8 @@
 }
 
 .description {
-    width: 25vh;
-    height: 25vh;
+    width: 45vw;
+    height: 45vw;
     padding: 1vh;
     background-color: #F9F871;
     display: flex;
