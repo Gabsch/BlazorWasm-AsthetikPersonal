@@ -29,7 +29,7 @@
     padding-bottom: 3vh;
     padding-right: 4vh;
     padding-left: 4vh;
-    max-width: 33vh;
+    max-width: 70vw;
     box-sizing: content-box;
 }
 
@@ -66,5 +66,6 @@
         padding-right: 35px;
         padding-left: 35px;
         min-width: 15vw;
+        max-width: 33vh;
     }
 }
