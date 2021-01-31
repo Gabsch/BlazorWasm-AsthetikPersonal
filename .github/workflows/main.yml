@@ -31,7 +31,8 @@ jobs:
       #  run: dotnet publish src/Gabsch.AsthetikPersonal/Gabsch.AsthetikPersonal.csproj -c Release -o release --nologo
       
       - name: publish Blazor project with prerendered static files
-        run: publish-statis-files.ps1
+        shell: pwsh
+        run: .\publish-statis-files.ps1
        
        # changes the base-tag in index.html from '/' to 'BlazorWasm-AsthetikPersonal' to match GitHub Pages repository subdirectory
       - name: Change base-tag in index.html from / to BlazorWasm-AsthetikPersonal
