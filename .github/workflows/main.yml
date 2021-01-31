@@ -27,20 +27,28 @@ jobs:
           dotnet-version: 5.0.100
       
       # publishes Blazor project to the release-folder
-      - name: Publish .NET Core Project
-        run: dotnet publish src/Gabsch.AsthetikPersonal/Gabsch.AsthetikPersonal.csproj -c Release -o release --nologo
+      #- name: Publish .NET Core Project
+      #  run: dotnet publish src/Gabsch.AsthetikPersonal/Gabsch.AsthetikPersonal.csproj -c Release -o release --nologo
+      
+      # publishes Blazor project with prerendered static files
+      - name: PowerShell script
+        # You may pin to the exact commit or the version.
+        # uses: Amadevus/pwsh-script@25a636480c7bc678a60bbf4e3e5ac03aca6cf2cd
+        with:
+          # PowerShell script to execute in Actions-hydrated context
+          script: publish-statis-files.ps1
        
        # changes the base-tag in index.html from '/' to 'BlazorWasm-AsthetikPersonal' to match GitHub Pages repository subdirectory
       - name: Change base-tag in index.html from / to BlazorWasm-AsthetikPersonal
-        run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorWasm-AsthetikPersonal\/" \/>/g' release/wwwroot/index.html
+        run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorWasm-AsthetikPersonal\/" \/>/g' output/wwwroot/index.html
       
         # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
       - name: Add .nojekyll file
-        run: touch release/wwwroot/.nojekyll
+        run: touch output/wwwroot/.nojekyll
       
        # copy index.html to 404.html to serve the same file when a file is not found
       - name: copy index.html to 404.html
-        run: cp release/wwwroot/index.html release/wwwroot/404.html
+        run: cp output/wwwroot/index.html output/wwwroot/404.html
       
       - name: Deploy to GitHub Pages
         # You may pin to the exact commit or the version.
@@ -52,4 +60,4 @@ jobs:
           # This is the branch you wish to deploy to, for example gh-pages or docs.
           BRANCH: gh-pages
           # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
-          FOLDER: release/wwwroot
+          FOLDER: output/wwwroot
