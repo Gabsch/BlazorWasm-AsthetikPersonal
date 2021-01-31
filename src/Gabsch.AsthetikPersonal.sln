@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gabsch.AsthetikPersonal", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpress.Blazor.AnchorUtils", "..\tools\DevExpress.Blazor.AnchorUtils\DevExpress.Blazor.AnchorUtils.csproj", "{CE37E3CA-1959-4883-8640-44DEAF102DA9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gabsch.PreRenderer", "Gabsch.PreRenderer\Gabsch.PreRenderer.csproj", "{7BAC827F-89B2-474C-AC38-170AFDF9E124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gabsch.AsthetikPersonal.Server", "Gabsch.AsthetikPersonal.Server\Gabsch.AsthetikPersonal.Server.csproj", "{8E98A3E4-217D-4E67-B985-F5333655027E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{CE37E3CA-1959-4883-8640-44DEAF102DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE37E3CA-1959-4883-8640-44DEAF102DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE37E3CA-1959-4883-8640-44DEAF102DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAC827F-89B2-474C-AC38-170AFDF9E124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAC827F-89B2-474C-AC38-170AFDF9E124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAC827F-89B2-474C-AC38-170AFDF9E124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAC827F-89B2-474C-AC38-170AFDF9E124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E98A3E4-217D-4E67-B985-F5333655027E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E98A3E4-217D-4E67-B985-F5333655027E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E98A3E4-217D-4E67-B985-F5333655027E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E98A3E4-217D-4E67-B985-F5333655027E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
