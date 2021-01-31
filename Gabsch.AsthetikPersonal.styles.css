@@ -305,8 +305,8 @@
     }
 
     .flip-container[b-vdlxsa35xf], .face[b-vdlxsa35xf], .back[b-vdlxsa35xf] {
-        width: 25vh;
-        height: 25vh;
+        width: 45vw;
+        height: 45vw;
     }
 }
 /* /Components/ImageContainer.razor.rz.scp.css */
