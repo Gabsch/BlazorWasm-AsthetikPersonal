@@ -1,0 +1,89 @@
+﻿[
+  {
+    "DisplayName": "Functional-Training",
+    "AlternateName": "Functional-Training",
+    "Description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,\n sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\n sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.\n Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,\n consetetur sadipscing elitr,\n sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\n sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.\n Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "IconPath": "https://img.icons8.com/ios/50/000000/sleeping-mat.png",
+    "Time": "45 Min.",
+    "Price": 99,
+    "Row": 1,
+    "BulletPoints": [
+      "Alltagsrelevant",
+      "Sportübergreifend",
+      "Mit eigenem Körpergewicht",
+      "Komplexe Bewegungsabläufe"
+    ]
+  },
+  {
+    "DisplayName": "Muskelaufbau",
+    "AlternateName": "Muskel-Aufbau",
+    "Description": "Zusammen erstellen wir einen für Dich individuell erstellten Trainingsplan.\nDabei achten wir auf deine Ernährung und gehen gezielt auf die Muskelpartien ein, die du aufbauen möchtest",
+    "IconPath": "https://img.icons8.com/ios/50/000000/fit.png",
+    "Time": "45 Min.",
+    "Price": 99,
+    "Row": 1,
+    "BulletPoints": [
+      "Zielgerichtete Belastung",
+      "Aufbau & Definition",
+      "Reduzierung des Körperfetts"
+    ]
+  },
+  {
+    "DisplayName": "Gewichtsverlust",
+    "AlternateName": "Gewichts-Verlust",
+    "Description": "Du willst abnehmen?",
+    "IconPath": "https://img.icons8.com/ios/50/000000/scale.png",
+    "Time": "45 Min.",
+    "Price": 99,
+    "Row": 1,
+    "BulletPoints": [
+      "Ernährung",
+      "Regulierung des Stoffwechsels",
+      "Reduktion des Körperfetts"
+    ]
+  },
+  {
+    "DisplayName": "Cardio-Fitness",
+    "AlternateName": "Cardio / Ausdauer-Training",
+    "Description": "Herz",
+    "IconPath": "https://img.icons8.com/ios/50/000000/exercise.png",
+    "Time": "45 Min.",
+    "Price": 99,
+    "Row": 2,
+    "BulletPoints": [
+      "Ausdauernde Bewegungseinheit",
+      "Verbesserung der Atmung",
+      "Verbesserung des Herz-Kreislauf-Systems"
+    ]
+  },
+  {
+    "DisplayName": "Kernmuskulatur",
+    "AlternateName": "Core Training",
+    "Description": "Core",
+    "IconPath": "https://img.icons8.com/ios/50/000000/torso.png",
+    "Time": "45 Min.",
+    "Price": 99,
+    "Row": 2,
+    "BulletPoints": [
+      "Koordination",
+      "Körperstabilität",
+      "Kraftentwicklung der Körpermuskulatur"
+    ]
+  },
+  {
+    "DisplayName": "Beweglichkeitstraining",
+    "AlternateName": "Mobility-Training",
+    "Description": "Mobilty",
+    "IconPath": "https://img.icons8.com/ios/50/000000/hyperactive.png",
+    "Time": "45 Min.",
+    "Price": 99,
+    "Row": 3,
+    "BulletPoints": [
+      "Beweglichkeit",
+      "Mobilität & Flexibilität",
+      "Neurales Training",
+      "Faszientraining",
+      "und vieles mehr!"
+    ]
+  }
+]
