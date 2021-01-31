@@ -37,7 +37,7 @@ jobs:
         uses: Amadevus/pwsh-script@v2.0.0
         with:
           # PowerShell script to execute in Actions-hydrated context
-          script: publish-statis-files.ps1
+          script: src/publish-statis-files.ps1
        
        # changes the base-tag in index.html from '/' to 'BlazorWasm-AsthetikPersonal' to match GitHub Pages repository subdirectory
       - name: Change base-tag in index.html from / to BlazorWasm-AsthetikPersonal
