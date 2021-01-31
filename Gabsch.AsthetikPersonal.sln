@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30615.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gabsch.AsthetikPersonal", "Gabsch.AsthetikPersonal\Gabsch.AsthetikPersonal.csproj", "{2855FB5F-BF95-4E15-80D6-794B725ED5A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gabsch.AsthetikPersonal", "src\Gabsch.AsthetikPersonal\Gabsch.AsthetikPersonal.csproj", "{2855FB5F-BF95-4E15-80D6-794B725ED5A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpress.Blazor.AnchorUtils", "..\tools\DevExpress.Blazor.AnchorUtils\DevExpress.Blazor.AnchorUtils.csproj", "{CE37E3CA-1959-4883-8640-44DEAF102DA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevExpress.Blazor.AnchorUtils", "tools\DevExpress.Blazor.AnchorUtils\DevExpress.Blazor.AnchorUtils.csproj", "{CE37E3CA-1959-4883-8640-44DEAF102DA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gabsch.PreRenderer", "Gabsch.PreRenderer\Gabsch.PreRenderer.csproj", "{7BAC827F-89B2-474C-AC38-170AFDF9E124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gabsch.PreRenderer", "src\Gabsch.PreRenderer\Gabsch.PreRenderer.csproj", "{7BAC827F-89B2-474C-AC38-170AFDF9E124}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gabsch.AsthetikPersonal.Server", "Gabsch.AsthetikPersonal.Server\Gabsch.AsthetikPersonal.Server.csproj", "{8E98A3E4-217D-4E67-B985-F5333655027E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gabsch.AsthetikPersonal.Server", "src\Gabsch.AsthetikPersonal.Server\Gabsch.AsthetikPersonal.Server.csproj", "{8E98A3E4-217D-4E67-B985-F5333655027E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

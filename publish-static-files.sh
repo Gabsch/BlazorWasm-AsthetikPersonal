@@ -2,7 +2,7 @@
 SLN_DIR="$(pwd)"
 
 # Build and publish the WebAssembly app
-dotnet publish -c Release -o "output" BlazorApp1
+dotnet publish -c Release -o "output" src/Gabsch.AsthetikPersonal
 
 # Set the RenderOutputDirectory environment variable
 # and run the Prerender test to generate the output
