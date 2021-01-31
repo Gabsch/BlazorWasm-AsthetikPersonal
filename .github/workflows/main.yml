@@ -32,7 +32,7 @@ jobs:
       
       - name: publish Blazor project with prerendered static files
         shell: pwsh
-        run: .\publish-statis-files.ps1
+        run: .\publish-static-files.ps1
        
        # changes the base-tag in index.html from '/' to 'BlazorWasm-AsthetikPersonal' to match GitHub Pages repository subdirectory
       - name: Change base-tag in index.html from / to BlazorWasm-AsthetikPersonal
